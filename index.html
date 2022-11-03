@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <h3 class="bg bg-primary text-white p-4">CRUD by Using Web Storage</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <form id="stdInfo">
+                    <div class="form-group">
+                        <label for="fname"><strong>First Name</strong></label>
+                        <input type="text" class="form-control" id="fname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname"><strong>Last Name</strong></label>
+                        <input type="text" class="form-control" id="lname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><strong>E-mail</strong></label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact"><strong>Contact</strong></label>
+                        <input type="text" class="form-control" id="contact">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" value="Submit" id="submitBtn">
+                        <input type="button" class="btn btn-primary d-none" value="Update" id="updateBtn">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Sr.No.</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>E-mail</th>
+                            <th>Contact</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="info">
+                        
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+   <script src="./assets/js/app.js"></script> 
+</body>
+</html>
